@@ -42,4 +42,6 @@ models:
       +materialized: table
     staging_baraawh:
       +materialized: view
+    transformed_wh:
+      +materialized: table
   
