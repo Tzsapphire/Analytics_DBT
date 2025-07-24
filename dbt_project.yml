@@ -42,4 +42,5 @@ models:
       +materialized: view
     transformed_wh:
       +materialized: table
-  
+    intd_baraawh:
+      +materialized: view

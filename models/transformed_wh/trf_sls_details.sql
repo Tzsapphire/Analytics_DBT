@@ -16,13 +16,13 @@ trf_sales as (
     sls_sales as sales_amount,  --measures
     sls_quantity as quantity,
     sls_price as price
-    from {{ ref ("stg_sales_details")}}
+    from {{ ref ("int_sales_details")}}
 ),
 
 fct_sales as (
     select *, -- after only choose the columns you need
-    trf_product.product_key as product_key,
-    trf_customer.customer_key as customer_key
+    trf_product.product_key as product_key_1,
+    trf_customer.customer_key as customer_key_2
     from trf_sales
     left join trf_customer on trf_sales.sls_cust_id = trf_customer.customer_id
     left join trf_product on trf_sales.sls_prd_key = trf_product.product_number

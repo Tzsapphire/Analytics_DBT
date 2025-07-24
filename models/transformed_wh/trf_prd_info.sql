@@ -7,7 +7,7 @@ with stg_prod as (
         prd_cost as product_cost, 
         prd_start_dt as start_date,
         prd_end_dt as end_date   
-    from {{ref ("stg_prod_info")}}
+    from {{ref ("int_prod_info")}}
 ),
 
 stg_erp_prod as (
@@ -15,7 +15,7 @@ stg_erp_prod as (
         id, 
         subcat as subcategory, 
         maintenance 
-    from {{ ref ("stg_erp_px_cat") }}
+    from {{ ref ("int_erp_px_cat") }}
 ),
 
 dim_products as (

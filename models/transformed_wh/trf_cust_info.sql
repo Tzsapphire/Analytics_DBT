@@ -8,13 +8,13 @@ with
             cst_marital_status as marital_status,
             cst_gndr,
             cst_create_date as create_date
-        from {{ ref("stg_cust_info") }}
+        from {{ ref("int_cust_info") }}
     ),
 
-    stg_erp_loca1 as (select cid, cntry as country from {{ ref("stg_erp_loca1") }}),
+    stg_erp_loca1 as (select cid, cntry as country from {{ ref("int_erp_loca1") }}),
 
     stg_custaz as (
-        select cst_key, gen, bdate as birthdate from {{ ref("stg_erp_custaz") }}
+        select cst_key, gen, bdate as birthdate from {{ ref("int_erp_custaz") }}
     ),
 
     dim_customer as (
