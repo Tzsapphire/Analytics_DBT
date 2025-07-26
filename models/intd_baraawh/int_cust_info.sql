@@ -17,8 +17,8 @@ clean_cust_info as (
                 else 'n/a'
             end as cst_marital_status,
             case 
-                when upper(trim(cst_gender)) = 'M' then 'Male'
-                when upper(trim(cst_gender)) = 'F' then 'Female',
+                when upper(trim(cst_gndr)) = 'M' then 'Male'
+                when upper(trim(cst_gndr)) = 'F' then 'Female'
                 else 'n/a'
             end as cst_gender,
             cst_create_date
