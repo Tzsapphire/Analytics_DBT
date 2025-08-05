@@ -1,0 +1,19 @@
+
+sources:
+  - name: bronze_schema
+    description: This contains the source raw files
+    database: chizaram_db
+    schema: bronze_schema
+    tables:
+      - name: cust_info
+        description: This contains the crm_customer information 
+      - name: erp_custaz12
+        description: This contains the erp_customer information
+      - name: erp_loca101
+        description: This contains the erp_location customer
+      - name: erp_px_cat_g1v2
+        description: This contains the erp_product category
+      - name: prd_info
+        description: This contains the crm_product information
+      - name: sales_details
+        description: This contains the crm_sales details

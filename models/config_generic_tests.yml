@@ -1,0 +1,36 @@
+models:
+  - name: int_cust_info
+    columns:
+      - name: cst_id
+        tests:
+          - uniq_columns
+      - name: cst_key
+        tests:
+          - unique 
+          # above is a dbt inner test
+  
+  - name: int_prod_info
+    columns:
+      - name: prd_id
+        tests:
+          - uniq_columns
+      - name: prd_key
+        tests:
+          - not_null
+          - unique 
+          # above is a dbt inner test; normally unique will fail
+
+  - name: trf_prd_info
+    columns:
+      - name: product_id
+        tests:
+          - uniq_columns
+          - not_null_columns
+      - name: category_id
+        tests:
+          - not_null           
+          # above is a dbt inner test
+      - name: product_key
+        tests:
+          - unique
+          # above dbt inner test 

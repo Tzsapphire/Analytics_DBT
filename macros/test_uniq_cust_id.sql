@@ -1,0 +1,14 @@
+-- with trf_customer as (
+--     select 
+--         cst_id  ,  count(*)as cnt
+--         cst_key,
+--         cst_firstname,  
+--         cst_lastname,
+--         cst_marital_status, 
+--         cst_gndr,
+--         cst_create_date
+--     from {{ ref('trf_cust_info') }} 
+--     group by customer_id
+-- )
+-- select * from trf_customer
+--  having cnt>1
