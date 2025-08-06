@@ -1,9 +1,8 @@
 # Analytics Engineer Project 
-(Recreated with Snowflake, dbt, and Power BI)
+(Recreated with **Snowflake**, **dbt (Data Build Tool)**,and **Power BI**)
 
 This is an end-to-end **analytics engineering project** that follows the modern **ELT** model.
 
-Tools used:  **Snowflake**, **dbt (Data Build Tool)**, **Power BI** , **Git & GitHub**
 ---
 
 ## Project Architecture
