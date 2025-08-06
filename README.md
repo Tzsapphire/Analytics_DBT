@@ -3,8 +3,7 @@
 
 This is an end-to-end **analytics engineering project** that follows the modern **ELT** model.
 
-
-I recreated BARAA's data engineering project using **Snowflake**, **dbt (Data Build Tool)**, **Power BI** , **Git & GitHub**
+Tools used:  **Snowflake**, **dbt (Data Build Tool)**, **Power BI** , **Git & GitHub**
 ---
 
 ## Project Architecture
