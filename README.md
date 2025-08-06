@@ -1,7 +1,7 @@
 # Analytics Engineer Project 
 (Recreated with Snowflake, dbt, and Power BI)
 
-This is an end-to-end **data engineering project** that follows the modern **ELT** model.
+This is an end-to-end **analytics engineering project** that follows the modern **ELT** model.
 
 
 I recreated BARAA's data engineering project using **Snowflake**, **dbt (Data Build Tool)**, **Power BI** , **Git & GitHub**
@@ -20,8 +20,14 @@ In this project, I extracted and loaded the raw data into Snowflake then transfo
 
 1. **Data Ingestion:** Loaded raw data into Snowflake via dbt sources
 
-2. **Modeling with dbt:** loaded the staging models with the yaml source file pointing at the raw snowflake wh; created intermediate (silver) models which contained cleaned data and the final gold models used for further reporting. 
- - Applied custom tests in dbt (e.g., uniqueness, not-null) ; Added filters (`WHERE` clauses) to reduce scan costs
+2. **Modeling with dbt:** loaded the staging models with the yaml source file pointing at the raw snowflake wh; created intermediate (silver) models which contained cleaned data and the final gold models used for further reporting. Modeling performed across three layers:
+       Source: Raw ingestion from Airbyte
+       Intermediate: Data cleansing, type casting, and business logic
+       Consumption (Marts): Star schema 
+
+For ensuring Data Quality using dbt:
+      Built-in tests (unique, not null)      
+      WHERE clause filters to reduce query cost
 
 3. **Visualization with Power BI:** Built an interactive dashboard to answer analytical questions
 
