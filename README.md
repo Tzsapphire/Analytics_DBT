@@ -30,6 +30,12 @@ For ensuring Data Quality using dbt:
       Built-in tests (unique, not null)      
       WHERE clause filters to reduce query cost
 
+**Final tables view**
+Relationship diagram
+
+![ERD](Baraa project.png)
+
+
 3. **Visualization with Power BI:** Built an interactive dashboard to answer analytical questions
 
 ---
