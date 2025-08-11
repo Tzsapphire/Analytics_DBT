@@ -1,6 +1,6 @@
 -- catch the tests at the source, which is our stg
 
---checking for id 
+--checking for duplicate id 
 with stg_customer as (
     select 
         *
