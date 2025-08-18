@@ -31,9 +31,10 @@ For ensuring Data Quality using dbt:
       WHERE clause filters to reduce query cost
 
 **Final tables view**
+
 Relationship diagram
 
-![ERD](Baraa project.png)
+!ERD diagram!
 
 
 3. **Visualization with Power BI:** Built an interactive dashboard to answer analytical questions
